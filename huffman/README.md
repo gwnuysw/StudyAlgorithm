@@ -30,10 +30,10 @@
 
 문서를 압축하는데 필요한 문서(java_scanner)와, 압축된 문서(compressedjava_scanner), 허프만 코드를 실행하는 클래스들을 담아놨습니다. 프로그램은 huffman_main에서 실행됩니다.
 
-### [java_scanner](https://github.com/gwnuysw/huffmanHomeWork/blob/master/huffman/java_scanner)
+### [java_scanner](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/huffman/java_scanner)
 압축할 문서는 java document 항목 중 하나인 [scanner](https://docs.oracle.com/javase/7/docs/api/java/util/Scanner.html)에 대한 문서를 사용했습니다. 문서의 크기는 **59,136 bytes** 입니다.
 
-### [compressedjava_scanner](https://github.com/gwnuysw/huffmanHomeWork/blob/master/huffman/compressedjava_scanner)
+### [compressedjava_scanner](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/huffman/compressedjava_scanner)
 
 java_scanner를 압축한 결과물 입니다. 문서의 헤더에 허프만 테이블이 등장합니다. 단어와 코드는 콜론 기호로 구분, 각 단어, 코드쌍은 !로 구분 테이블과 코딩된 문서의 구분은 #입니다.
 ```
@@ -44,11 +44,11 @@ java_scanner를 압축한 결과물 입니다. 문서의 헤더에 허프만 테
 ### huffman_main
 huffman 객체를 이용합니다.
 
-### [huffman.java](https://github.com/gwnuysw/huffman/blob/master/huffmandoc.markdown)
+### [huffman.java](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/huffmandoc.markdown)
 
 압축할 문서를 파싱한후 Table객체를 허프만 테이블을 작성하고 MinHeap객체를 이용하여 허프만 트리와 허프만 코드를 작성합니다. 작성된 허프만 테이블을 compressedjava_scanner 헤더에 기록한 후 허프만 코드를 기록합니다.
 
-### [Table.java](https://github.com/gwnuysw/huffman/blob/master/Tabledoc.markdown)
+### [Table.java](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/Tabledoc.markdown)
 
 허프만 테이블 작성시 Linked List와 함께 이진 노드의 구조를 같는 Table 객체를 이용합니다. 각 Table 노드는 Linked List 인덱스에 하나씩 저장 됩니다.
 
@@ -64,11 +64,11 @@ huffman 객체를 이용합니다.
 ### compressedjava_scanner
 압축된 문서를 해제하기 위해 huffman_main에서 생성된 문서를 huffmanDecode 패키지에 복사합니다.
 
-### [extracted](https://github.com/gwnuysw/huffman/blob/master/huffmanDecode/extracted)
+### [extracted](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/huffmanDecode/extracted)
 
 huffmanDecode_main을 실행한후 압축 해제된 문서입니다.
 
-### [extract](https://github.com/gwnuysw/huffman/blob/master/extract.markdown)
+### [extract](https://github.com/gwnuysw/StudyAlgorithm/blob/master/huffman/extract.markdown)
 
 extracted의 헤더를 파싱하여 허프만 데이블을 다시 작성한후 암호화된 부분을 읽어서 압축해제 합니다.
 

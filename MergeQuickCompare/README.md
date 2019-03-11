@@ -282,34 +282,34 @@ sortedData와 가장 큰 차이점은 랜덤 객체를 사용하고, 각 정렬�
 
 ## 퀵정렬과 합병절렬의 성능 비교분석
 ### 최악의 경우
-![worst](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/1.png?raw=true)
+![worst](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/1.png?raw=true)
 
 복잡도를 따르면 퀵정렬(`Θ(n^2)`)이 병합정렬(`Θ(nlogn)`)보다 더 느린데 결과 값도 그에 맞게 나왔습니다.
 ### 일반적인 경우
-![general](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/2.png?raw=true)
+![general](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/2.png?raw=true)
 
 최악의 경우가 아니라면 두 알고리즘에 큰 차이는 없습니다.
 ## 서로 다른 임계값을 가질때 각 알고리즘의 성능 비교분석
 ### 정렬된 데이터를 이용할 때
-![worst1](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/1.png?raw=true)
+![worst1](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/1.png?raw=true)
 
 
-![worst2](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/3.png?raw=true)
+![worst2](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/3.png?raw=true)
 
 
-![worst3](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/4.png?raw=true)
+![worst3](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/4.png?raw=true)
 
-![worst4](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/9.png?raw=true)
+![worst4](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/9.png?raw=true)
 
 **임계점을 늘려감에 따라 병합알고리즘 실행 시간에는 변화가 보이지 않습니다. 그러나 퀵정렬 알고리즘 실행시간은 점점 늘어납니다.** 심지어 임계값이 100일때가 임계값이 1일때 보다 10mills만큼 더 오래 걸렸습니다. 그러나 모든 데이터를 삽입정렬로 실행 한 경우 두 알고리즘의 실행시간은 0mills으로 차이가 없습니다. 삽입정렬은 원소의 개수가 적을 경우 성능이 가장 좋은것으로 알려져 있지만 정렬된 데이터의 경우 삽입정렬의 `while( (aux >= 0) && ( list[aux] > temp ) )`부분에서 조건을 충족시키지 못하여 반복문 자체를 실행하지 않기 때문입니다. 삽입정렬은 최선의 경우가 데이터가 이미 정렬되어 있는 경우이며 그때의 시간복잡도는 `Θ(n)` 입니다.
 
 ### 정렬되지 않은 데이터를 이용할때
-![general1](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/5.png?raw=true)
+![general1](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/5.png?raw=true)
 
-![general2](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/6.png?raw=true)
+![general2](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/6.png?raw=true)
 
-![general2.5](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/8.png?raw=true)
+![general2.5](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/8.png?raw=true)
 
-![general3](https://github.com/gwnuysw/Merge-sort-and-Quick-sort-comaare/blob/master/capture/7.png?raw=true)
+![general3](https://github.com/gwnuysw/StudyAlgorithm/blob/master/MergeQuickCompare/capture/7.png?raw=true)
 
 정렬되지 않은 데이터를 사용할때 퀵정렬과 삽입정렬의 혼합은 놀라운 성능을 보입니다. 임계값이 1, 100, 1000일때 퀵정렬은 0mills의 실행시간을 보이며 병합정렬은 임계값이 커짐에 따라 실행시간이 조금씩 늘어납니다. 그러나 임계값이 5000이 되면서 퀵정렬도 실행시간이 늘어났고 임계값이 7000이 되면 두 알고리즘은 삽입 정렬만을 실행하기 때문에 실행시간 차이는 거의 나지 않습니다. 또한 정렬 시간도 가장 깁니다.(삽입정렬 시간 복잡도 : `Ο(n^2)`)

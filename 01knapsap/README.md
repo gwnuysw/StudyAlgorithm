@@ -106,51 +106,51 @@ K[i][w] = --|   K[i-1][w]                               if w < W[i]
 
 ### 01knapsap_solution
 
-![초기화, 변수](https://github.com/gwnuysw/01knapsap/blob/master/capture/1.png)
+![초기화, 변수](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/1.png?raw=true)
 
-![max](https://github.com/gwnuysw/01knapsap/blob/master/capture/2.png)
+![max](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/2.png?raw=true)
 
 ### brutal
 
-![brutal.solution](https://github.com/gwnuysw/01knapsap/blob/master/capture/3.png)
+![brutal.solution](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/3.png?raw=true)
 
 ### stepping_stone
 
-![findIndex_comments](https://github.com/gwnuysw/01knapsap/blob/master/capture/6.png)
+![findIndex_comments](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/6.png?raw=true)
 
-![findIndex](https://github.com/gwnuysw/01knapsap/blob/master/capture/4.png)
+![findIndex](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/4.png?raw=true)
 
-![stepping_stone.solution](https://github.com/gwnuysw/01knapsap/blob/master/capture/5.png)
+![stepping_stone.solution](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/5.png?raw=true)
 
 ### functional
 
-![functional.solution](https://github.com/gwnuysw/01knapsap/blob/master/capture/7.png)
+![functional.solution](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/7.png?raw=true)
 
-![merge1](https://github.com/gwnuysw/01knapsap/blob/master/capture/8.png)
+![merge1](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/8.png?raw=true)
 
-![merge](https://github.com/gwnuysw/01knapsap/blob/master/capture/9.png)
+![merge](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/9.png?raw=true)
 
 ## 실행 결과
 
 ### main
 
-![main](https://github.com/gwnuysw/01knapsap/blob/master/capture/10.png)
+![main](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/10.png?raw=true)
 
 ### knapsap_solution
 
-![whatstuff](https://github.com/gwnuysw/01knapsap/blob/master/capture/14.png)
+![whatstuff](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/14.png?raw=true)
 
 ### brutal
 
-![brutal.excute](https://github.com/gwnuysw/01knapsap/blob/master/capture/11.png)
+![brutal.excute](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/11.png?raw=true)
 
 ### stepping_stone
 
-![stepping.excute](https://github.com/gwnuysw/01knapsap/blob/master/capture/12.png)
+![stepping.excute](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/12.png?raw=true)
 
 ### functional
 
-![functional.excute](https://github.com/gwnuysw/01knapsap/blob/master/capture/13.png)
+![functional.excute](https://github.com/gwnuysw/StudyAlgorithm/blob/master/01knapsap/capture/13.png?raw=true)
 
 ## 결과 분석
 
