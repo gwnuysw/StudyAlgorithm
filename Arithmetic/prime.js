@@ -43,3 +43,16 @@ function countPrime(callback, endPoint){
 }
 
 console.log(countPrime(arg, 100));
+
+/*
+  prime factorization
+*/
+function PF(n){
+  for(var i = 2; i <= n; i++){
+    while(n%i == 0){
+      n /= i;
+      console.log('prime', i);
+    }
+  }
+}
+PF(5512);
